@@ -1,9 +1,39 @@
-<!-- fix : <html> element does not have a [lang] attribute -->
-    <html lang="en">
-        <head>
-        </head>
-        <body>
-          Hello World!
-        </body>
-        </html>
-        
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title for SEO -->
+  <title>Optimized Web Page</title>
+
+  <!-- Meta tags for responsiveness and description -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="This is an optimized web page that improves performance, accessibility, and SEO.">
+
+  <!-- CSS for minimal render-blocking -->
+  <link rel="preload" href="styles.css" as="style" onload="this.rel='stylesheet'">
+
+  <!-- Modern JavaScript for browsers -->
+  <script type="module" defer src="main.js"></script>
+  <noscript>Your browser does not support JavaScript or JavaScript is disabled.</noscript>
+</head>
+<body>
+  <!-- Proper heading structure for accessibility -->
+  <h1>Welcome to the Optimized Web Page</h1>
+
+  <!-- Image with alt text, explicit dimensions, and using wallpaper.jpg -->
+  <img src="wallpaper.jpg" alt="A scenic view of mountains and the ocean" width="1200" height="600">
+
+  <!-- Accessible form with labels -->
+  <form>
+    <label for="name">Name:</label>
+    <input id="name" type="text" placeholder="Enter your name">
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Inline script to defer rendering -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log('Page loaded and ready!');
+    });
+  </script>
+</body>
+</html>
